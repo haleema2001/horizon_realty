@@ -70,7 +70,7 @@ include 'php/db.php';
             <div class="product-grid">
 
             <?php
-            $sql = "SELECT * FROM listings WHERE category='townhome'";
+            $sql = "SELECT * FROM listings WHERE category='townhomes'";
             $result = $conn->query($sql);
 
             while($row = $result->fetch_assoc()){

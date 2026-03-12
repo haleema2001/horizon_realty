@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-$sql = "SELECT * FROM listings WHERE category='townhome'";
+$sql = "SELECT * FROM listings WHERE category='townhomes'";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_assoc()){
