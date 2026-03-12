@@ -42,7 +42,7 @@ include 'php/db.php';
                     <ul class="dropdown-content" aria-label="Listing categories">
                         <li><a href="single-family.html">SINGLE FAMILY</a></li>
                         <li><a href="condos.html">CONDOS</a></li>
-                        <li><a href="townhomes.html" class="active">TOWNHOMES</a></li>
+                        <li><a href="townhomes.php" class="active">TOWNHOMES</a></li>
                         <li><a href="luxury-estates.html">LUXURY ESTATES</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
                         <li><a href="land.html">LAND</a></li>

@@ -3,7 +3,7 @@
   "categories": [
     { "id": "single-family", "name": "Single Family Homes", "page": "single-family.html" },
     { "id": "condos", "name": "Condos", "page": "condos.html" },
-    { "id": "townhomes", "name": "Townhomes", "page": "townhomes.html" },
+    { "id": "townhomes", "name": "Townhomes", "page": "townhomes.php" },
     { "id": "luxury", "name": "Luxury Estates", "page": "luxury-estates.html" },
     { "id": "commercial", "name": "Commercial", "page": "commercial.html" },
     { "id": "land", "name": "Land", "page": "land.html" },
