@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if (!isset($_SESSION["user_email"])) {
+    header("Location: login.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +19,7 @@ session_start();
 
 <p>Welcome to your private account area.</p>
 <p>Name: Demo User</p>
-<p>Email: demo@email.com</p>
+<p>Email: <?php echo htmlspecialchars($_SESSION["user_email"]); ?></p>
 
 <a href="login.php">Back to Login</a>
 
