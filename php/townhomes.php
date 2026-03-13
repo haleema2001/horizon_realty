@@ -8,7 +8,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()){
 ?>
 <article class="product-card">
-    <img src="media/<?php echo $row['image']; ?>" alt="<?php echo $row['title']; ?>">
+    <img src="media/<?php echo htmlspecialchars($row['image']); ?>" alt="<?php echo htmlspecialchars($row['title']); ?>">
     <h3><?php echo $row['title']; ?></h3>
 
     <p class="product-type">
