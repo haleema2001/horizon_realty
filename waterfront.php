@@ -1,25 +1,28 @@
+<?php
+$category = "waterfront";
+?>
+
 <!--
   Project: Horizon Realty
   Purpose: Real estate website
   Author: Parmida Khashayar
   Date: 2026-02-25
   Notes:
-    - This is the Waterfront listings page for Horizon Realty, showcasing properties with water view, sunset view, and boat dock options.
+    - This is the Waterfront listings page for Horizon Realty.
 -->
-
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Horizon Realty - Waterfront properties for sale.">
+    <meta name="keywords" content="waterfront homes, lakefront property, real estate, Horizon Realty">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Horizon Realty - Waterfront properties. Water view, sunset view, boat dock options.">
-    <meta name="keywords" content="waterfront real estate, lakefront, Horizon Realty">
+    <link rel="icon" href="media/favicon.ico">
     <title>Horizon Realty - Waterfront</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Didot&display=swap" rel="stylesheet">
-    <link rel="icon" href="media/favicon.ico">
 </head>
 
 <body class="spring-theme">
@@ -36,17 +39,17 @@
                 <li class="dropdown">
                     <a href="#" aria-haspopup="true" aria-expanded="false">LISTINGS</a>
                     <ul class="dropdown-content" aria-label="Listing categories">
-                        <li><a href="single-family.html">SINGLE FAMILY</a></li>
-                        <li><a href="condos.html">CONDOS</a></li>
+                        <li><a href="single-family.php">SINGLE FAMILY</a></li>
+                        <li><a href="condos.php">CONDOS</a></li>
                         <li><a href="townhomes.php">TOWNHOMES</a></li>
-                        <li><a href="luxury-estates.html">LUXURY ESTATES</a></li>
-                        <li><a href="commercial.html">COMMERCIAL</a></li>
-                        <li><a href="land.html">LAND</a></li>
-                        <li><a href="rentals.html">RENTALS</a></li>
-                        <li><a href="multi-family.html">MULTI-FAMILY</a></li>
-                        <li><a href="new-developments.html">NEW DEVELOPMENTS</a></li>
-                        <li><a href="vacation-properties.html">VACATION</a></li>
-                        <li><a href="waterfront.html" class="active">WATERFRONT</a></li>
+                        <li><a href="luxury-estates.php">LUXURY ESTATES</a></li>
+                        <li><a href="commercial.php">COMMERCIAL</a></li>
+                        <li><a href="land.php">LAND</a></li>
+                        <li><a href="rentals.php">RENTALS</a></li>
+                        <li><a href="multi-family.php">MULTI-FAMILY</a></li>
+                        <li><a href="new-developments.php">NEW DEVELOPMENTS</a></li>
+                        <li><a href="vacation-properties.php">VACATION</a></li>
+                        <li><a href="waterfront.php" class="active">WATERFRONT</a></li>
                     </ul>
                 </li>
                 <li><a href="featured.html">FEATURED</a></li>
@@ -61,17 +64,13 @@
         </nav>
     </header>
 
-    <main class="house-collection">
-        <h2>WATERFRONT</h2>
-        <div class="product-grid">
-            <article class="product-card">
-                <img src="media/PE1.jpg" alt="Luminous Waterfront Villa">
-                <h3>Luminous Waterfront Villa</h3>
-                <p class="product-type">4 bed • 4 bath • 3,800 sq ft • Water or Sunset View • Boat Dock or No Dock</p>
-                <p class="product-price">$1,595,000 CAD</p>
-                <a href="virtual-tour.html?listing=L025" class="view-details">View Details</a>
-            </article>
-        </div>
+    <main>
+        <section class="house-collection">
+            <h2>WATERFRONT</h2>
+            <div class="product-grid">
+                <?php include 'php/listings-by-category.php'; ?>
+            </div>
+        </section>
     </main>
 
     <script src="scripts.js"></script>

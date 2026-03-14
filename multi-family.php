@@ -1,5 +1,5 @@
 <?php
-$category = "townhomes";
+$category = "multi-family";
 ?>
 
 <!--
@@ -8,7 +8,7 @@ $category = "townhomes";
   Author: Parmida Khashayar
   Date: 2026-02-25
   Notes:
-    - This is the Townhomes listings page for Horizon Realty, showcasing properties with courtyard, garden, and pool views, as well as garage options.
+    - This is the Multi-Family listings page for Horizon Realty.
 -->
 
 <!DOCTYPE html>
@@ -16,11 +16,11 @@ $category = "townhomes";
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Horizon Realty - Townhomes for sale. Courtyard, garden, and pool views with garage options.">
-    <meta name="keywords" content="townhomes for sale, townhouses, Horizon Realty">
+    <meta name="description" content="Horizon Realty - Multi-family properties for sale.">
+    <meta name="keywords" content="multi-family homes, duplex, triplex, investment property, Horizon Realty">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/favicon.ico">
-    <title>Horizon Realty - Townhomes</title>
+    <title>Horizon Realty - Multi-Family</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Didot&display=swap" rel="stylesheet">
 </head>
@@ -41,12 +41,12 @@ $category = "townhomes";
                     <ul class="dropdown-content" aria-label="Listing categories">
                         <li><a href="single-family.php">SINGLE FAMILY</a></li>
                         <li><a href="condos.php">CONDOS</a></li>
-                        <li><a href="townhomes.php" class="active">TOWNHOMES</a></li>
+                        <li><a href="townhomes.php">TOWNHOMES</a></li>
                         <li><a href="luxury-estates.php">LUXURY ESTATES</a></li>
                         <li><a href="commercial.php">COMMERCIAL</a></li>
                         <li><a href="land.php">LAND</a></li>
                         <li><a href="rentals.php">RENTALS</a></li>
-                        <li><a href="multi-family.php">MULTI-FAMILY</a></li>
+                        <li><a href="multi-family.php" class="active">MULTI-FAMILY</a></li>
                         <li><a href="new-developments.php">NEW DEVELOPMENTS</a></li>
                         <li><a href="vacation-properties.php">VACATION</a></li>
                         <li><a href="waterfront.php">WATERFRONT</a></li>
@@ -64,13 +64,16 @@ $category = "townhomes";
         </nav>
     </header>
 
-    <main class="house-collection">
-        <h2>TOWNHOMES</h2>
-        <div class="product-grid">
-            <?php include 'php/listings-by-category.php'; ?>
-        </div>
+    <main>
+        <section class="house-collection">
+            <h2>MULTI-FAMILY</h2>
+            <div class="product-grid">
+                <?php include 'php/listings-by-category.php'; ?>
+            </div>
+        </section>
     </main>
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
