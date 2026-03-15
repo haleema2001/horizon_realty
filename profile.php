@@ -24,5 +24,10 @@ if (!isset($_SESSION["user_id"])) {
 
 <p><a href="logout.php">Logout</a></p>
 
+<?php if ($_SESSION["user_role"] === "admin") { ?>
+    <p><a href="admin-users.php">Manage Users</a></p>
+    <p><a href="admin-listings.php">Manage Listings</a></p>
+<?php } ?>
+
 </body>
 </html>
