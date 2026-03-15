@@ -35,7 +35,7 @@ $category = "multi-family";
         </button>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.php">HOME</a></li>
                 <li class="dropdown">
                     <a href="#" aria-haspopup="true" aria-expanded="false">LISTINGS</a>
                     <ul class="dropdown-content" aria-label="Listing categories">

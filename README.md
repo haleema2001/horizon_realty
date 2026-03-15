@@ -45,10 +45,10 @@ To contribute changes back to the repository:
    ```
 
 ## Usage
-Open `index.html` in your web browser to view the website.
+Open `index.php` in your web browser to view the website.
 
 ## Project Structure
-- `index.html`: Main homepage
+- `index.php`: Main homepage
 - `styles.css`: Stylesheet
 - `scripts.js`: JavaScript functionality
 - Various HTML files for different pages
