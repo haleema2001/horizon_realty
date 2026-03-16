@@ -99,7 +99,12 @@ $stmt->close();
     <button type="submit">Save Changes</button>
 </form>
 
-<p><a href="admin-listings.php">Back to Admin Listings</a></p>
+<p>
+<a href="admin-listings.php">Back to Admin Listings</a> |
+<a href="profile.php">Profile</a> |
+<a href="index.php">Home</a> |
+<a href="logout.php">Logout</a>
+</p>
 
 </body>
 </html>
