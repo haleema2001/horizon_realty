@@ -36,6 +36,7 @@
             <ul class="nav-menu">
                 <li><a href="index.php">HOME</a></li>
                 <?php if (isset($_SESSION["user_id"])) { ?>
+                    <li><span>Welcome, <?php echo htmlspecialchars($_SESSION["user_name"]); ?></span></li>
                     <li><a href="profile.php">PROFILE</a></li>
                     <li><a href="logout.php">LOGOUT</a></li>
                 <?php } else { ?>
