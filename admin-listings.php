@@ -29,7 +29,13 @@ $result = $conn->query("SELECT id, title, category, price FROM listings ORDER BY
 
 <h1>Admin Listings Management</h1>
 
-<p><a href="profile.php">Back to Profile</a></p>
+<p>
+    <a href="profile.php">Back to Profile</a> |
+    <a href="index.php">Home</a> |
+    <a href="logout.php">Logout</a>
+</p>
+
+<hr>
 
 <table border="1" cellpadding="10">
     <tr>
